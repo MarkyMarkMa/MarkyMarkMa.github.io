@@ -1,0 +1,64 @@
+baseURL = "http://127.0.0.1:8765/"
+title = "Haofeng Ma"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  author = "Haofeng Ma"
+  info = ["Undergraduate Researcher", "University of Nottingham Ningbo China"]
+  description = "Haofeng Ma's academic homepage — time-series forecasting, deep learning, AI agents, and quantitative finance."
+  keywords = "Haofeng Ma, time-series forecasting, deep learning, AI agents, large language models, quantitative finance"
+  avatarURL = "images/avatar.svg"
+  faviconSVG = "images/favicon.svg"
+  since = 2026
+  colorScheme = "auto"
+  hideColorSchemeToggle = false
+  customCSS = ["css/custom.css"]
+
+[[params.social]]
+  name = "E-mail"
+  icon = "fa-solid fa-at fa-2x"
+  weight = 1
+  url = "mailto:smyhm1@nottingham.edu.cn"
+
+[[params.social]]
+  name = "GitHub"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 2
+  url = "https://github.com/MarkyMarkMa"
+
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 3
+  url = "https://www.linkedin.com/in/haofeng-ma-a08352364"
+
+[[params.social]]
+  name = "CV"
+  icon = "fa-solid fa-file-lines fa-2x"
+  weight = 4
+  url = "/cv/Haofeng_Ma_CV.pdf"
+
+[[menu.main]]
+  name = "Research"
+  weight = 1
+  url = "research/"
+
+[[menu.main]]
+  name = "About Me"
+  weight = 2
+  url = "about/"
+
+[[menu.main]]
+  name = "CV"
+  weight = 3
+  url = "cv/Haofeng_Ma_CV.pdf"
+  target = "_blank"

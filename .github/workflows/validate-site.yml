@@ -1,4 +1,4 @@
-name: Validate site
+name: Validate private site
 
 on:
   push:
@@ -12,44 +12,26 @@ permissions:
 
 jobs:
   build:
-    name: Build Jekyll site
+    name: Build Hugo site
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
-          bundler-cache: true
+          submodules: recursive
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
         with:
-          python-version: "3.13"
-          cache: pip
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v5
-        with:
-          node-version: "20"
-          cache: npm
-
-      - name: Install JavaScript dependencies
-        run: npm ci
+          hugo-version: "0.163.2"
+          extended: true
 
       - name: Build site
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y imagemagick
-          pip3 install --upgrade nbconvert
-          export JEKYLL_ENV=production
-          bundle exec jekyll build
+        run: hugo --gc --minify --baseURL "http://127.0.0.1:8765/"
 
       - name: Upload private build artifact
         uses: actions/upload-artifact@v4
         with:
           name: private-site-build
-          path: _site
+          path: public
           retention-days: 7
