@@ -9,7 +9,7 @@ A private draft of Haofeng Ma’s English academic homepage. The site uses the M
 - Research page: `content/research.md`
 - English CV data: `_data/cv.yml`
 - Downloadable CV: `static/cv/Haofeng_Ma_CV.pdf`
-- Visual customization: `static/css/custom.css`
+- Visual customization: `assets/css/custom.css`
 - Avatar placeholder: `static/images/avatar.svg`
 
 ## Private build
