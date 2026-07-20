@@ -1,0 +1,56 @@
+cv:
+  name: Haofeng Ma
+  headline: Undergraduate Researcher
+  email: smyhm1@nottingham.edu.cn
+  location: Ningbo, China
+
+  sections:
+    Profile:
+      - Undergraduate student working on deep learning and time-series forecasting, with broader interests in AI agents, large language models, and quantitative finance.
+
+    Education:
+      - institution: University of Nottingham Ningbo China
+        location: Ningbo, China
+        url: https://www.nottingham.edu.cn/en/
+        area: Mathematics and Applied Mathematics
+        degree: BSc
+        studyType: Undergraduate
+        start_date: 2024-09
+        end_date: 2028-06
+        score: "Average mark: 74/100 · GPA: 4.0"
+        courses: "Core Mathematics, Applied Mathematics, Algebra, Probability and Statistics, Mathematical Software, and Foundations of Physics"
+        highlights:
+          - "Average mark: 74/100 · GPA: 4.0"
+          - "Relevant coursework: Core Mathematics, Applied Mathematics, Algebra, Probability and Statistics, Mathematical Software, and Foundations of Physics"
+
+    Research Projects:
+      - name: "PHAT: Modeling Period Heterogeneity for Multivariate Time Series Forecasting"
+        summary: "ICLR 2026 Poster · Third author"
+        highlights:
+          - Models periodicity as an inductive bias for deep learning in multivariate time-series forecasting.
+          - Develops temporal feature extraction and channel interaction mechanisms tailored to heterogeneous periodic patterns across variables.
+          - Conducted in collaboration with the School of Artificial Intelligence and Data Science, University of Science and Technology of China.
+
+      - name: "To See Far, Look Close: Evolutionary Forecasting for Long-term Time Series"
+        summary: "Under review · Fourth author"
+        highlights:
+          - Studies the direct forecasting paradigm for long-horizon time series and introduces an evolutionary forecasting approach.
+          - Trains on short, higher-confidence prediction windows and progressively extrapolates in blocks at inference time.
+          - Conducted in collaboration with the School of Artificial Intelligence and Data Science, University of Science and Technology of China.
+
+    Skills:
+      - label: Programming
+        details: Python, MATLAB
+        name: Programming
+        icon: fa-solid fa-code
+        keywords: "Python, MATLAB"
+      - label: Technical writing
+        details: LaTeX, academic writing in English
+        name: Technical writing
+        icon: fa-solid fa-pen
+        keywords: "LaTeX, academic writing in English"
+      - label: Research areas
+        details: Time-series forecasting, deep learning, AI agents, large language models, quantitative finance
+        name: Research areas
+        icon: fa-solid fa-chart-line
+        keywords: "Time-Series Forecasting, Deep Learning, AI Agents, Large Language Models, Quantitative Finance"
