@@ -5,8 +5,9 @@ A private draft of Haofeng Ma’s English academic homepage. The site uses the M
 ## Content maintenance
 
 - Home identity and social links: `hugo.toml`
-- About page: `content/about.md`
-- Research page: `content/research.md`
+- English content: `content/en/`
+- Chinese content: `content/zh/`
+- Language and color controls: `layouts/_partials/float.html`
 - English CV data: `_data/cv.yml`
 - Downloadable CV: `static/cv/Haofeng_Ma_CV.pdf`
 - Visual customization: `assets/css/custom.css`

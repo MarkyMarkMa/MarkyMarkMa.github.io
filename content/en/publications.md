@@ -1,10 +1,10 @@
 +++
-title = "Research"
-description = "Research by Haofeng Ma in multivariate and long-term time-series forecasting."
-slug = "research"
+title = "Publications"
+description = "Research publications and manuscripts by Haofeng Ma."
+slug = "publications"
 +++
 
-<p class="page-intro">My current research focuses on deep forecasting models for multivariate and long-horizon time series. Public paper and code links will be added when they become available.</p>
+<p class="page-intro">Here is a list of my current research work. Public paper and code links will be added when they become available.</p>
 
 <div class="research-list">
   <article class="research-entry" id="phat">

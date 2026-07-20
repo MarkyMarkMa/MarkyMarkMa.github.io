@@ -1,8 +1,8 @@
 baseURL = "http://127.0.0.1:8765/"
 title = "Haofeng Ma"
 theme = "hugo-coder"
-locale = "en-US"
 defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]
 
@@ -47,18 +47,70 @@ disableKinds = ["taxonomy", "term"]
   weight = 4
   url = "/cv/Haofeng_Ma_CV.pdf"
 
-[[menu.main]]
-  name = "Research"
+[languages.en]
+  locale = "en-US"
+  languageName = "English"
+  languageDirection = "ltr"
+  contentDir = "content/en"
+  title = "Haofeng Ma"
   weight = 1
-  url = "research/"
 
-[[menu.main]]
-  name = "About Me"
+  [languages.en.params]
+    author = "Haofeng Ma"
+    info = ["Undergraduate Researcher", "University of Nottingham Ningbo China"]
+    description = "Haofeng Ma's academic homepage — time-series forecasting, deep learning, AI agents, and quantitative finance."
+    keywords = "Haofeng Ma, time-series forecasting, deep learning, AI agents, large language models, quantitative finance"
+
+  [[languages.en.menu.main]]
+    name = "Posts"
+    weight = 1
+    url = "posts/"
+
+  [[languages.en.menu.main]]
+    name = "News"
+    weight = 2
+    url = "news/"
+
+  [[languages.en.menu.main]]
+    name = "Publications"
+    weight = 3
+    url = "publications/"
+
+  [[languages.en.menu.main]]
+    name = "About Me"
+    weight = 4
+    url = "about/"
+
+[languages.zh]
+  locale = "zh-CN"
+  languageName = "中文"
+  languageDirection = "ltr"
+  contentDir = "content/zh"
+  title = "麻豪峰"
   weight = 2
-  url = "about/"
 
-[[menu.main]]
-  name = "CV"
-  weight = 3
-  url = "cv/Haofeng_Ma_CV.pdf"
-  target = "_blank"
+  [languages.zh.params]
+    author = "麻豪峰"
+    info = ["本科生研究者", "宁波诺丁汉大学"]
+    description = "麻豪峰的个人学术主页，研究方向包括时间序列预测、深度学习、智能体、大语言模型与金融量化。"
+    keywords = "麻豪峰, 时间序列预测, 深度学习, 智能体, 大语言模型, 金融量化"
+
+  [[languages.zh.menu.main]]
+    name = "文章"
+    weight = 1
+    url = "posts/"
+
+  [[languages.zh.menu.main]]
+    name = "动态"
+    weight = 2
+    url = "news/"
+
+  [[languages.zh.menu.main]]
+    name = "论文"
+    weight = 3
+    url = "publications/"
+
+  [[languages.zh.menu.main]]
+    name = "关于我"
+    weight = 4
+    url = "about/"

@@ -1,0 +1,17 @@
+{{ if or (gt (len .AllTranslations) 1) (not .Site.Params.hideColorSchemeToggle) }}
+<div class="float-container">
+  {{ $current := . }}
+  {{ range .AllTranslations }}
+    {{ if ne .Language.Lang $current.Language.Lang }}
+      <a class="language-toggle" href="{{ .RelPermalink }}" title="{{ if eq $current.Language.Lang "en" }}中文{{ else }}English{{ end }}" aria-label="{{ if eq $current.Language.Lang "en" }}切换到中文版{{ else }}Switch to English{{ end }}">
+        <i class="fa-solid fa-language fa-fw" aria-hidden="true"></i>
+      </a>
+    {{ end }}
+  {{ end }}
+  {{ if not .Site.Params.hideColorSchemeToggle }}
+    <a id="dark-mode-toggle" class="colorscheme-toggle" title="Color scheme" aria-label="Toggle color scheme">
+      <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+  {{ end }}
+</div>
+{{ end }}
